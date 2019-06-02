@@ -23,6 +23,6 @@ class LianjiaErshoufangItem(scrapy.Item):
     position = scrapy.Field()
     position_url = scrapy.Field()
     total_price = scrapy.Field()
-    unit_price = scrapy.Field()
+    square_price = scrapy.Field()
     crawl_time = scrapy.Field()
     # follow_info = scrapy.Field()

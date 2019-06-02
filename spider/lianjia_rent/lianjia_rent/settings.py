@@ -9,13 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 import time
+from config import *
 
 BOT_NAME = 'lianjia_rent'
 
 SPIDER_MODULES = ['lianjia_rent.spiders']
 NEWSPIDER_MODULE = 'lianjia_rent.spiders'
 MONGO_URI = 'localhost'
-RENT = 'lianjia_rent' + str(time.strftime('%Y%m%d', time.localtime(time.time())))
+RENT = rentdb()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'lianjia_rent (+http://www.yourdomain.com)'

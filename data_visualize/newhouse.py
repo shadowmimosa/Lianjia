@@ -6,17 +6,18 @@ from data_visualize.common import *
 from pyecharts.render import make_snapshot
 # 使用 snapshot-selenium 渲染图片
 from snapshot_selenium import snapshot
+from config import *
 
 
 # 新房数据分析
 class newhouse():
     def __init__(self):
-        self.path = base_path + "\\newhouse"
+        self.path = base_path + sep + "newhouse"
         if not os.path.exists(self.path):
             os.mkdir(self.path)
         self.charts = charts()
         self.client = pymongo.MongoClient()
-        db = 'lianjia_newhouse' + str(time.strftime('%Y%m%d', time.localtime(time.time())))
+        db = newhousedb()
         self.db = self.client[db]
         self.collections = self.db.list_collection_names()
         # 每平米均价
@@ -37,7 +38,7 @@ class newhouse():
     # 每平米价位占比
     def main_price_range(self, city):
         match = get_main_price_range(city)
-        save_dir = self.path + "\\main_price_range"
+        save_dir = self.path + sep + "main_price_range"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         collection = self.db[city]
@@ -56,7 +57,8 @@ class newhouse():
                 )
         bar = self.charts.bar(range_key, range_value, city,
                               main_price_range_template.format(city), "单位: 元/m²")
-        make_snapshot(snapshot, bar.render(), "{}\\{}.gif".format(save_dir, main_price_range_template.format(city)))
+        make_snapshot(snapshot, bar.render(),
+                      "{}" + sep + "{}.gif".format(save_dir, main_price_range_template.format(city)))
         print("finished {} newhouse main_price_range".format(city))
 
     # 每套房各价位占比
@@ -64,7 +66,7 @@ class newhouse():
         match = get_second_price_range(city)
         range_key = []
         range_value = []
-        save_dir = self.path + "\\second_price_range"
+        save_dir = self.path + sep + "second_price_range"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         collection = self.db[city]
@@ -79,12 +81,13 @@ class newhouse():
                     ).count()
                 )
         bar = self.charts.pie_radius(range_key, range_value, second_price_range_template.format(city))
-        make_snapshot(snapshot, bar.render(), "{}\\{}.gif".format(save_dir, second_price_range_template.format(city)))
+        make_snapshot(snapshot, bar.render(),
+                      "{}" + sep + "{}.gif".format(save_dir, second_price_range_template.format(city)))
         print("finished {} newhouse second_price_range".format(city))
 
     # 每平米均价
     def avg_square_meter(self, collections):
-        save_dir = self.path + "\\avg_square_meter"
+        save_dir = self.path + sep + "avg_square_meter"
         first_key = []
         second_land_key = []
         second_sea_key = []
@@ -148,29 +151,33 @@ class newhouse():
             self.avg_price_square_meter.append(dict)
         first_bar = self.charts.bar(first_key, first_value, "",
                                     first_level_avg_square_template, temproary_loss)
-        make_snapshot(snapshot, first_bar.render(), "{}\\{}.gif".format(save_dir, first_level_avg_square_template))
+        make_snapshot(snapshot, first_bar.render(),
+                      "{}" + sep + "{}.gif".format(save_dir, first_level_avg_square_template))
         second_land_bar = self.charts.bar(second_land_key, second_land_value, "",
                                           second_level_land_avg_square_template, temproary_loss)
-        make_snapshot(snapshot, second_land_bar.render(), "{}\\{}.gif".format(save_dir,
-                                                                              second_level_land_avg_square_template))
+        make_snapshot(snapshot, second_land_bar.render(), "{}" + sep + "{}.gif".format(save_dir,
+                                                                                       second_level_land_avg_square_template))
         second_sea_bar = self.charts.bar(second_sea_key, second_sea_value, "",
                                          second_level_sea_avg_square_template, temproary_loss)
-        make_snapshot(snapshot, second_sea_bar.render(), "{}\\{}.gif".format(save_dir,
-                                                                             second_level_sea_avg_square_template))
+        make_snapshot(snapshot, second_sea_bar.render(), "{}" + sep + "{}.gif".format(save_dir,
+                                                                                      second_level_sea_avg_square_template))
         third_bar = self.charts.bar(third_key, third_value, "",
                                     third_level_avg_square_template, temproary_loss)
-        make_snapshot(snapshot, third_bar.render(), "{}\\{}.gif".format(save_dir, third_level_avg_square_template))
+        make_snapshot(snapshot, third_bar.render(),
+                      "{}" + sep + "{}.gif".format(save_dir, third_level_avg_square_template))
         forth_bar = self.charts.bar(forth_key, forth_value, "",
                                     forth_level_avg_square_template, temproary_loss)
-        make_snapshot(snapshot, forth_bar.render(), "{}\\{}.gif".format(save_dir, forth_level_avg_square_template))
+        make_snapshot(snapshot, forth_bar.render(),
+                      "{}" + sep + "{}.gif".format(save_dir, forth_level_avg_square_template))
         fifth_bar = self.charts.bar(fifth_key, fifth_value, "",
                                     fifth_level_avg_square_template, temproary_loss)
-        make_snapshot(snapshot, fifth_bar.render(), "{}\\{}.gif".format(save_dir, fifth_level_avg_square_template))
+        make_snapshot(snapshot, fifth_bar.render(),
+                      "{}" + sep + "{}.gif".format(save_dir, fifth_level_avg_square_template))
         print("finish newhouse count avg square meter price")
 
     # 每套房均价
     def avg_loupan_price(self, collections):
-        save_dir = self.path + "\\avg_loupan"
+        save_dir = self.path + sep + "avg_loupan"
         first_key = []
         second_land_key = []
         second_sea_key = []
@@ -229,29 +236,29 @@ class newhouse():
             self.avg_loupan.append(dict)
         first_bar = self.charts.bar(first_key, first_value, "",
                                     first_level_avg_loupan, temproary_loss)
-        make_snapshot(snapshot, first_bar.render(), "{}\\{}.gif".format(save_dir, first_level_avg_loupan))
+        make_snapshot(snapshot, first_bar.render(), "{}" + sep + "{}.gif".format(save_dir, first_level_avg_loupan))
         second_land_bar = self.charts.bar(second_land_key, second_land_value, "",
                                           second_level_land_avg_loupan, temproary_loss)
-        make_snapshot(snapshot, second_land_bar.render(), "{}\\{}.gif".format(save_dir,
-                                                                              second_level_land_avg_loupan))
+        make_snapshot(snapshot, second_land_bar.render(), "{}" + sep + "{}.gif".format(save_dir,
+                                                                                       second_level_land_avg_loupan))
         second_sea_bar = self.charts.bar(second_sea_key, second_sea_value, "",
                                          second_level_sea_avg_loupan, temproary_loss)
-        make_snapshot(snapshot, second_sea_bar.render(), "{}\\{}.gif".format(save_dir,
-                                                                             second_level_sea_avg_loupan))
+        make_snapshot(snapshot, second_sea_bar.render(), "{}" + sep + "{}.gif".format(save_dir,
+                                                                                      second_level_sea_avg_loupan))
         third_bar = self.charts.bar(third_key, third_value, "",
                                     third_level_avg_loupan, temproary_loss)
-        make_snapshot(snapshot, third_bar.render(), "{}\\{}.gif".format(save_dir, third_level_avg_loupan))
+        make_snapshot(snapshot, third_bar.render(), "{}" + sep + "{}.gif".format(save_dir, third_level_avg_loupan))
         forth_bar = self.charts.bar(forth_key, forth_value, "",
                                     forth_level_avg_loupan, temproary_loss)
-        make_snapshot(snapshot, forth_bar.render(), "{}\\{}.gif".format(save_dir, forth_level_avg_loupan))
+        make_snapshot(snapshot, forth_bar.render(), "{}" + sep + "{}.gif".format(save_dir, forth_level_avg_loupan))
         fifth_bar = self.charts.bar(fifth_key, fifth_value, "",
                                     fifth_level_avg_loupan, temproary_loss)
-        make_snapshot(snapshot, fifth_bar.render(), "{}\\{}.gif".format(save_dir, fifth_level_avg_loupan))
+        make_snapshot(snapshot, fifth_bar.render(), "{}" + sep + "{}.gif".format(save_dir, fifth_level_avg_loupan))
         print("finish count avg loupan price")
 
     # 物业占比分布图
     def wuye_type_count(self, collections):
-        save_dir = self.path + "\\wuye_type_count"
+        save_dir = self.path + sep + "wuye_type_count"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -279,12 +286,12 @@ class newhouse():
             wuye_bar = self.charts.bar(wuye_key, wuye_value, "",
                                        wuye_type_count_template.format(city), "")
             make_snapshot(snapshot, wuye_bar.render(),
-                          "{}\\{}.gif".format(save_dir, wuye_type_count_template.format(city)))
+                          "{}" + sep + "{}.gif".format(save_dir, wuye_type_count_template.format(city)))
             print("finish {} wuye_type_count".format(city))
 
     # 各户型占比
     def huxing_count(self, collections):
-        save_dir = self.path + "\\huxing_count"
+        save_dir = self.path + sep + "huxing_count"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -312,12 +319,12 @@ class newhouse():
             huxing_bar = self.charts.bar(huxing_key, huxing_value, "",
                                          huxing_count_template.format(city), "")
             make_snapshot(snapshot, huxing_bar.render(),
-                          "{}\\{}.gif".format(save_dir, huxing_count_template.format(city)))
+                          "{}" + sep + "{}.gif".format(save_dir, huxing_count_template.format(city)))
             print("finish {} huxing_count".format(city))
 
     # 每平米最贵的top5楼盘
     def square_meter_max_top5(self, collections):
-        save_dir = self.path + "\\square_meter_max_top5"
+        save_dir = self.path + sep + "square_meter_max_top5"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -335,12 +342,12 @@ class newhouse():
             max_top5_scatter = self.charts.scatter_visualmap_color(key, value, city,
                                                                    square_price_max_top5.format(city))
             make_snapshot(snapshot, max_top5_scatter.render(),
-                          "{}\\{}.gif".format(save_dir, square_price_max_top5.format(city)))
+                          "{}" + sep + "{}.gif".format(save_dir, square_price_max_top5.format(city)))
             print('finish {} max_top5'.format(city))
 
     # 每平米最便宜的top5楼盘
     def square_meter_min_top5(self, collections):
-        save_dir = self.path + "\\square_meter_min_top5"
+        save_dir = self.path + sep + "square_meter_min_top5"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -358,12 +365,12 @@ class newhouse():
             min_top5_scatter = self.charts.scatter_spliteline(key, value, city,
                                                               square_price_min_top5.format(city))
             make_snapshot(snapshot, min_top5_scatter.render(),
-                          "{}\\{}.gif".format(save_dir, square_price_min_top5.format(city)))
+                          "{}" + sep + "{}.gif".format(save_dir, square_price_min_top5.format(city)))
             print('finish {} min_top5'.format(city))
 
     # 标签词云
     def tag_wordcloud(self, collections):
-        save_dir = self.path + "\\tag_wordcloud"
+        save_dir = self.path + sep + "tag_wordcloud"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -385,9 +392,8 @@ class newhouse():
                 wordcloud.append((key, value))
             tag = self.charts.wordcloud_diamond(wordcloud, title='{}市新房热门标签'.format(city))
             make_snapshot(snapshot, tag.render(),
-                          "{}\\{}.gif".format(save_dir, '{}市新房热门标签'.format(city)))
+                          "{}" + sep + "{}.gif".format(save_dir, '{}市新房热门标签'.format(city)))
             print("完成{}市热门标签".format(city))
-
 
 
 if __name__ == '__main__':

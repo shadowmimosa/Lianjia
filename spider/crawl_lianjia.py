@@ -8,38 +8,44 @@ import pymongo
 # 更新数据前先删除当天已经存在的数据库
 def drop_database():
     client = pymongo.MongoClient()
-    if client['lianjia_newhouse' + str(time.strftime('%Y%m%d', time.localtime(time.time())))]:
-        client.drop_database('lianjia_newhouse' + str(time.strftime('%Y%m%d', time.localtime(time.time()))))
-    if client['lianjia_ershoufang' + str(time.strftime('%Y%m%d', time.localtime(time.time())))]:
-        client.drop_database('lianjia_ershoufang' + str(time.strftime('%Y%m%d', time.localtime(time.time()))))
-    if client['lianjia_rent' + str(time.strftime('%Y%m%d', time.localtime(time.time())))]:
-        client.drop_database('lianjia_rent' + str(time.strftime('%Y%m%d', time.localtime(time.time()))))
+    if client[newhousedb()]:
+        client.drop_database(newhousedb())
+    if client[ershoufangdb()]:
+        client.drop_database(ershoufangdb())
+    if client[rentdb()]:
+        client.drop_database(rentdb())
 
 
 def crawl_ershoufang():
+    os.chdir('lianjia_ershoufang')
     print(os.getcwd())
-    ershoufang_dir = os.chdir('lianjia_ershoufang')
     logging.info('成功进入{}'.format(os.getcwd()))
     ershoufang_crawl = os.system('scrapy crawl ershoufang')
+    os.chdir(os.pardir)
+    print(os.getcwd())
 
 
 def crawl_newhouse():
-    print(os.getcwd())
     newhouse_dir = os.chdir('lianjia_newhouse')
+    print(os.getcwd())
     logging.info('成功进入{}'.format(os.getcwd()))
     newhouse_crawl = os.system('scrapy crawl newhouse')
+    os.chdir(os.pardir)
+    print(os.getcwd())
 
 
 def crawl_rent():
-    print(os.getcwd())
     rent_dir = os.chdir('lianjia_rent')
+    print(os.getcwd())
     logging.info('成功进入{}'.format(os.getcwd()))
     rent_crawl = os.system('scrapy crawl rent')
+    os.chdir(os.pardir)
+    print(os.getcwd())
 
 
 def crawl_lianjia():
-    os.chdir('spider')
     print(os.getcwd())
+    os.chdir('spider')
     drop_database()
     spider_status = '正在爬取二手房数据'
     crawl_ershoufang()
@@ -51,4 +57,7 @@ def crawl_lianjia():
     crawl_rent()
     data_update_time = int(time.time())
     os.chdir(os.pardir)
-    print(os.getcwd())
+
+
+if __name__ == '__main__':
+    crawl_lianjia()

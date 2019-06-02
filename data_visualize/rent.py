@@ -4,18 +4,19 @@ from data_visualize.echarts import charts
 from pyecharts.render import make_snapshot
 # 使用 snapshot-selenium 渲染图片
 from snapshot_selenium import snapshot
+from config import *
 
 
 class rent():
     yuan_per_square = '元/套'
 
     def __init__(self):
-        self.path = base_path + "\\rent"
+        self.path = base_path + sep + "rent"
         if not os.path.exists(self.path):
             os.mkdir(self.path)
         self.charts = charts()
         self.client = pymongo.MongoClient()
-        db = 'lianjia_rent' + str(time.strftime('%Y%m%d', time.localtime(time.time())))
+        db = rentdb()
         self.db = self.client[db]
         self.collections = self.db.list_collection_names()
         self.avg_price = []

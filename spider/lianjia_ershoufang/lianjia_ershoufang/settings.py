@@ -9,19 +9,19 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 import time
-
+from config import *
 BOT_NAME = 'lianjia_ershoufang'
 
 SPIDER_MODULES = ['lianjia_ershoufang.spiders']
 NEWSPIDER_MODULE = 'lianjia_ershoufang.spiders'
 MONGO_URI = 'localhost'
-ERSHOUFANG = 'lianjia_ershoufang' + str(time.strftime('%Y%m%d', time.localtime(time.time())))
+ERSHOUFANG = ershoufangdb()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'lianjia_ershoufang (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32

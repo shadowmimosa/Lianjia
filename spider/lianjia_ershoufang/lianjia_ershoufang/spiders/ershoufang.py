@@ -36,7 +36,7 @@ class ErshoufangSpider(scrapy.Spider):
             re.findall(re.compile('<div class="positionInfo">(.+?)</div>'), response.text))
         total_price = re.findall(re.compile('class="totalPrice"><span>(.+?)</span>'),
                                  response.text)
-        unit_price = re.findall(re.compile('<div class="unitPrice" .*? data-price="(\d+)">'),
+        square_price = re.findall(re.compile('<div class="unitPrice" .*? data-price="(\d+)">'),
                                 response.text)
         for i in range(len(url)):
             item = LianjiaErshoufangItem()
@@ -85,11 +85,11 @@ class ErshoufangSpider(scrapy.Spider):
                 item['total_price'] = int(total_price[i])
             else:
                 item['total_price'] = NOT_EXIST_NUM
-            if unit_price[i].isdigit():
-                item['unit_price'] = int(unit_price[i])
+            if square_price[i].isdigit():
+                item['square_price'] = int(square_price[i])
             else:
-                item['unit_price'] = NOT_EXIST_NUM
-            if item['unit_price'] == NOT_EXIST_NUM or item['total_price'] == NOT_EXIST_NUM:
+                item['square_price'] = NOT_EXIST_NUM
+            if item['square_price'] == NOT_EXIST_NUM or item['total_price'] == NOT_EXIST_NUM:
                 continue
             item['crawl_time'] = int(time.time())
             yield item
