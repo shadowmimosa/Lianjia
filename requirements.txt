@@ -1,14 +1,4 @@
-aiohttp==3.5.4
-alembic==0.9.6
-appdirs==1.4.3
-asn1crypto==0.22.0
-async-timeout==3.0.1
-attrs==17.4.0
-Automat==0.6.0
-Babel==2.5.1
 beautifulsoup4==4.7.1
-bleach==2.0.0
-blinker==1.4
 bs4==0.0.1
 certifi==2018.11.29
 cffi==1.11.2
