@@ -8,6 +8,7 @@ from pyecharts.render import make_snapshot
 from snapshot_selenium import snapshot
 from data_visualize.lang import *
 from config import *
+from .common import *
 
 
 class ershoufang():
@@ -64,7 +65,7 @@ class ershoufang():
         bar = self.charts.bar(range_key, range_value, city,
                               self.unit_price_template.format(city), per_square)
         make_snapshot(snapshot, bar.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, ershoufang_unit_price.format(city)),
+                      img_name.format(save_dir, ershoufang_unit_price.format(city)),
                       delay=5)
         print("完成 " + ershoufang_unit_price.format(city))
 
@@ -89,7 +90,7 @@ class ershoufang():
                 )
         bar = self.charts.pie_radius(range_key, range_value, self.total_price_template.format(city))
         make_snapshot(snapshot, bar.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, ershoufang_total_price.format(city)))
+                      img_name.format(save_dir, ershoufang_total_price.format(city)))
         print("完成" + ershoufang_total_price.format(city))
 
     # 每平米均价
@@ -153,52 +154,52 @@ class ershoufang():
             self.avg_price_square_meter.append(dict)
         first_bar = self.charts.bar(first_key, first_value, "", first_ershoufang_square_avg, self.yuan_per_square)
         make_snapshot(snapshot, first_bar.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, first_ershoufang_square_avg, ))
+                      img_name.format(save_dir, first_ershoufang_square_avg, ))
         new_first_bar = self.charts.bar(new_first_key[:10], new_first_value[:10], "",
                                         new_first_ershoufang_square_avg, self.yuan_per_square)
         make_snapshot(snapshot, new_first_bar.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, new_first_ershoufang_square_avg, ))
+                      img_name.format(save_dir, new_first_ershoufang_square_avg, ))
         new_first_bar2 = self.charts.bar(new_first_key[10:], new_first_value[10:], "",
                                          new_first_ershoufang_square_avg_2, self.yuan_per_square)
         make_snapshot(snapshot, new_first_bar2.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, new_first_ershoufang_square_avg_2, ))
+                      img_name.format(save_dir, new_first_ershoufang_square_avg_2, ))
         second_bar = self.charts.bar(second_key[:10], second_value[:10], "",
                                      second_ershoufang_square_avg, self.yuan_per_square)
-        make_snapshot(snapshot, second_bar.render(), "{}" + sep + "{}.gif".format(save_dir,
-                                                                                  second_ershoufang_square_avg))
+        make_snapshot(snapshot, second_bar.render(), img_name.format(save_dir,
+                                                                     second_ershoufang_square_avg))
         second_bar2 = self.charts.bar(second_key[10:20], second_value[10:20], "",
                                       second_ershoufang_square_avg_2, self.yuan_per_square)
-        make_snapshot(snapshot, second_bar2.render(), "{}" + sep + "{}.gif".format(save_dir,
-                                                                                   second_ershoufang_square_avg_2))
+        make_snapshot(snapshot, second_bar2.render(), img_name.format(save_dir,
+                                                                      second_ershoufang_square_avg_2))
         second_bar3 = self.charts.bar(second_key[20:], second_value[20:], "",
                                       second_ershoufang_square_avg_3, self.yuan_per_square)
-        make_snapshot(snapshot, second_bar3.render(), "{}" + sep + "{}.gif".format(save_dir,
-                                                                                   second_ershoufang_square_avg_3))
+        make_snapshot(snapshot, second_bar3.render(), img_name.format(save_dir,
+                                                                      second_ershoufang_square_avg_3))
         third_bar = self.charts.bar(third_key[:10], third_value[:10], "",
                                     third_ershoufang_square_avg, self.yuan_per_square)
-        make_snapshot(snapshot, third_bar.render(), "{}" + sep + "{}.gif".format(save_dir, third_ershoufang_square_avg))
+        make_snapshot(snapshot, third_bar.render(), img_name.format(save_dir, third_ershoufang_square_avg))
         third_bar2 = self.charts.bar(third_key[10:20], third_value[10:20], "",
                                      third_ershoufang_square_avg_2, self.yuan_per_square)
         make_snapshot(snapshot, third_bar2.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, third_ershoufang_square_avg_2))
+                      img_name.format(save_dir, third_ershoufang_square_avg_2))
         third_bar3 = self.charts.bar(third_key[20:], third_value[20:], "",
                                      third_ershoufang_square_avg_3, self.yuan_per_square)
         make_snapshot(snapshot, third_bar3.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, third_ershoufang_square_avg_3))
+                      img_name.format(save_dir, third_ershoufang_square_avg_3))
         forth_bar = self.charts.bar(forth_key[:10], forth_value[:10], "",
                                     forth_ershoufang_suqare_avg, self.yuan_per_square)
-        make_snapshot(snapshot, forth_bar.render(), "{}" + sep + "{}.gif".format(save_dir, forth_ershoufang_suqare_avg))
+        make_snapshot(snapshot, forth_bar.render(), img_name.format(save_dir, forth_ershoufang_suqare_avg))
         forth_bar2 = self.charts.bar(forth_key[10:20], forth_value[10:20], "",
                                      forth_ershoufang_suqare_avg_2, self.yuan_per_square)
         make_snapshot(snapshot, forth_bar2.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, forth_ershoufang_suqare_avg_2))
+                      img_name.format(save_dir, forth_ershoufang_suqare_avg_2))
         forth_bar3 = self.charts.bar(forth_key[20:], forth_value[20:], "",
                                      forth_ershoufang_suqare_avg_3, self.yuan_per_square)
         make_snapshot(snapshot, forth_bar3.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, forth_ershoufang_suqare_avg_3))
+                      img_name.format(save_dir, forth_ershoufang_suqare_avg_3))
         fifth_bar = self.charts.bar(fifth_key, fifth_value, "",
                                     fifth_ershoufang_square_avg, self.yuan_per_square)
-        make_snapshot(snapshot, fifth_bar.render(), "{}" + sep + "{}.gif".format(save_dir, fifth_ershoufang_square_avg))
+        make_snapshot(snapshot, fifth_bar.render(), img_name.format(save_dir, fifth_ershoufang_square_avg))
         print("完成链家二手房各城市每平米均价作图")
 
     # 每套房均价
@@ -264,52 +265,52 @@ class ershoufang():
         first_bar = self.charts.bar(first_key, first_value, "", first_ershoufang_loupan_avg,
                                     self.ten_thousand_per_loupan)
         make_snapshot(snapshot, first_bar.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, first_ershoufang_loupan_avg, ))
+                      img_name.format(save_dir, first_ershoufang_loupan_avg, ))
         new_first_bar = self.charts.bar(new_first_key[:10], new_first_value[:10], "",
                                         new_first_ershoufang_loupan_avg, self.ten_thousand_per_loupan)
         make_snapshot(snapshot, new_first_bar.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, new_first_ershoufang_loupan_avg, ))
+                      img_name.format(save_dir, new_first_ershoufang_loupan_avg, ))
         new_first_bar2 = self.charts.bar(new_first_key[10:], new_first_value[10:], "",
                                          new_first_ershoufang_loupan_avg_2, self.ten_thousand_per_loupan)
         make_snapshot(snapshot, new_first_bar2.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, new_first_ershoufang_loupan_avg_2, ))
+                      img_name.format(save_dir, new_first_ershoufang_loupan_avg_2, ))
         second_bar = self.charts.bar(second_key[:10], second_value[:10], "",
                                      second_ershoufang_loupan_avg, self.ten_thousand_per_loupan)
-        make_snapshot(snapshot, second_bar.render(), "{}" + sep + "{}.gif".format(save_dir,
-                                                                                  second_ershoufang_loupan_avg))
+        make_snapshot(snapshot, second_bar.render(), img_name.format(save_dir,
+                                                                     second_ershoufang_loupan_avg))
         second_bar2 = self.charts.bar(second_key[10:20], second_value[10:20], "",
                                       second_ershoufang_loupan_avg_2, self.ten_thousand_per_loupan)
-        make_snapshot(snapshot, second_bar2.render(), "{}" + sep + "{}.gif".format(save_dir,
-                                                                                   second_ershoufang_loupan_avg_2))
+        make_snapshot(snapshot, second_bar2.render(), img_name.format(save_dir,
+                                                                      second_ershoufang_loupan_avg_2))
         second_bar3 = self.charts.bar(second_key[20:], second_value[20:], "",
                                       second_ershoufang_loupan_avg_3, self.ten_thousand_per_loupan)
-        make_snapshot(snapshot, second_bar3.render(), "{}" + sep + "{}.gif".format(save_dir,
-                                                                                   second_ershoufang_loupan_avg_3))
+        make_snapshot(snapshot, second_bar3.render(), img_name.format(save_dir,
+                                                                      second_ershoufang_loupan_avg_3))
         third_bar = self.charts.bar(third_key[:10], third_value[:10], "",
                                     third_ershoufang_loupan_avg, self.ten_thousand_per_loupan)
-        make_snapshot(snapshot, third_bar.render(), "{}" + sep + "{}.gif".format(save_dir, third_ershoufang_loupan_avg))
+        make_snapshot(snapshot, third_bar.render(), img_name.format(save_dir, third_ershoufang_loupan_avg))
         third_bar2 = self.charts.bar(third_key[10:20], third_value[10:20], "",
                                      third_ershoufang_loupan_avg_2, self.ten_thousand_per_loupan)
         make_snapshot(snapshot, third_bar2.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, third_ershoufang_loupan_avg_2))
+                      img_name.format(save_dir, third_ershoufang_loupan_avg_2))
         third_bar3 = self.charts.bar(third_key[20:], third_value[20:], "",
                                      third_ershoufang_loupan_avg_3, self.ten_thousand_per_loupan)
         make_snapshot(snapshot, third_bar3.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, third_ershoufang_loupan_avg_3))
+                      img_name.format(save_dir, third_ershoufang_loupan_avg_3))
         forth_bar = self.charts.bar(forth_key[:10], forth_value[:10], "",
                                     forth_ershoufang_loupan_avg, self.ten_thousand_per_loupan)
-        make_snapshot(snapshot, forth_bar.render(), "{}" + sep + "{}.gif".format(save_dir, forth_ershoufang_loupan_avg))
+        make_snapshot(snapshot, forth_bar.render(), img_name.format(save_dir, forth_ershoufang_loupan_avg))
         forth_bar2 = self.charts.bar(forth_key[10:20], forth_value[10:20], "",
                                      forth_ershoufang_loupan_avg_2, self.ten_thousand_per_loupan)
         make_snapshot(snapshot, forth_bar2.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, forth_ershoufang_loupan_avg_2))
+                      img_name.format(save_dir, forth_ershoufang_loupan_avg_2))
         forth_bar3 = self.charts.bar(forth_key[20:], forth_value[20:], "",
                                      forth_ershoufang_loupan_avg_3, self.ten_thousand_per_loupan)
         make_snapshot(snapshot, forth_bar3.render(),
-                      "{}" + sep + "{}.gif".format(save_dir, forth_ershoufang_loupan_avg_3))
+                      img_name.format(save_dir, forth_ershoufang_loupan_avg_3))
         fifth_bar = self.charts.bar(fifth_key, fifth_value, "",
                                     fifth_ershoufang_loupan_avg, self.ten_thousand_per_loupan)
-        make_snapshot(snapshot, fifth_bar.render(), "{}" + sep + "{}.gif".format(save_dir, fifth_ershoufang_loupan_avg))
+        make_snapshot(snapshot, fifth_bar.render(), img_name.format(save_dir, fifth_ershoufang_loupan_avg))
         print("完成链家各城市二手房每套均价作图")
 
     # 每平米最贵的top5楼盘
@@ -335,12 +336,12 @@ class ershoufang():
             max_top5_scatter = self.charts.scatter_spliteline(key, value, city,
                                                               self.square_price_max_top5.format(city))
             make_snapshot(snapshot, max_top5_scatter.render(),
-                          "{}" + sep + "{}.gif".format(save_dir, self.square_price_max_top5.format(city)))
+                          img_name.format(save_dir, self.square_price_max_top5.format(city)))
             print(hot_xiaoqu_ershoufang.format(city))
 
     # 每平米最便宜的top5楼盘
     def square_meter_min_top5(self, collections):
-        save_dir = self.path + "" + sep + "square_meter_min_top5"
+        save_dir = self.path + sep + "square_meter_min_top5"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -361,7 +362,7 @@ class ershoufang():
             min_top5_scatter = self.charts.scatter_visualmap_color(key, value, city,
                                                                    self.square_price_min_top5.format(city))
             make_snapshot(snapshot, min_top5_scatter.render(),
-                          "{}" + sep + "{}.gif".format(save_dir, self.square_price_min_top5.format(city)))
+                          img_name.format(save_dir, self.square_price_min_top5.format(city)))
             print('完成 {} 每平米最便宜top5小区作图'.format(city))
 
     # 热门小区词云
@@ -386,12 +387,12 @@ class ershoufang():
                 wordcloud.append((key, value))
             xiaoqu_wordcloud = self.charts.wordcloud_diamond(wordcloud, title='{}市二手房热门小区'.format(city))
             make_snapshot(snapshot, xiaoqu_wordcloud.render(),
-                          "{}" + sep + "{}.gif".format(save_dir, '{}市二手房热门小区'.format(city)))
+                          img_name.format(save_dir, '{}市二手房热门小区'.format(city)))
             print("完成{}市热门小区词云".format(city))
 
     # 热门地段词云
     def position_wordcloud(self, collections):
-        save_dir = self.path + "" + sep + "position_wordcloud"
+        save_dir = self.path + sep + "position_wordcloud"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -411,7 +412,7 @@ class ershoufang():
                 wordcloud.append((key, value))
             position_wordcloud = self.charts.wordcloud_diamond(wordcloud, title='{}市二手房热门地段'.format(city))
             make_snapshot(snapshot, position_wordcloud.render(),
-                          "{}" + sep + "{}.gif".format(save_dir, '{}市二手房热门地段'.format(city)))
+                          img_name.format(save_dir, '{}市二手房热门地段'.format(city)))
             print("完成{}市二手房热门地段词云".format(city))
 
 

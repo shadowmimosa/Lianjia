@@ -2,6 +2,7 @@ import time
 import pymongo
 import os
 from lianjia.constants import *
+from config import sep
 
 base_path = web_static_base_path
 # 字符串模板
@@ -35,6 +36,7 @@ tag_wordcloud_template = '{}市楼盘标签词云图'
 max_main_price = 200000
 # 每套房统计最高统计9000万的价格
 max_second_price = 90000
+img_name = '{}' + sep + '{}.gif'
 # 链家中国新房城市划分
 first_level = ['天津', '青岛', '上海', '郑州', '南京', '沈阳', '重庆', '广州',
                '武汉', '深圳', '长沙', '大连', '成都', '西安', '杭州', '苏州', '东莞', ]

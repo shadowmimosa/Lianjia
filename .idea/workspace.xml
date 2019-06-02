@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16fb5336-c362-4f0e-a693-c764951c928f" name="Default" comment="update readme">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_visualize/data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualize/data_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_visualize/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualize/common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_visualize/ershoufang.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualize/ershoufang.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_visualize/newhouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualize/newhouse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_visualize/render.html" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualize/render.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_visualize/rent.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_visualize/rent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/crawl_lianjia.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/crawl_lianjia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/spiders/ershoufang.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/spiders/ershoufang.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_rent/lianjia_rent/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_rent/lianjia_rent/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +32,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_visualize/rent.py">
+        <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="74">
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,7 +94,6 @@
         <option value="$PROJECT_DIR$/lianjia/templates/ershoufang.html" />
         <option value="$PROJECT_DIR$/lianjia/list.py" />
         <option value="$PROJECT_DIR$/lianjia/lang.py" />
-        <option value="$PROJECT_DIR$/data_visualize/common.py" />
         <option value="$PROJECT_DIR$/spider/lianjia_rent/lianjia_rent/spiders/rent.py" />
         <option value="$PROJECT_DIR$/lianjia/constants.py" />
         <option value="$PROJECT_DIR$/spider/test.py" />
@@ -125,14 +113,15 @@
         <option value="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/items.py" />
         <option value="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/spiders/ershoufang.py" />
         <option value="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/items.py" />
-        <option value="$PROJECT_DIR$/data_visualize/rent.py" />
         <option value="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/settings.py" />
         <option value="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/settings.py" />
         <option value="$PROJECT_DIR$/spider/lianjia_rent/lianjia_rent/settings.py" />
         <option value="$PROJECT_DIR$/spider/crawl_lianjia.py" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/data_visualize/common.py" />
         <option value="$PROJECT_DIR$/data_visualize/ershoufang.py" />
         <option value="$PROJECT_DIR$/data_visualize/newhouse.py" />
+        <option value="$PROJECT_DIR$/data_visualize/rent.py" />
       </list>
     </option>
   </component>
@@ -208,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.run (3)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="GraduationProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,6 +234,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lianjia/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="common" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GraduationProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\python3.6.7\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_visualize" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualize/common.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,42 +330,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="GraduationProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\python3.6.7\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_visualize" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_visualize/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.run (3)" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.crawl_lianjia" />
       <item itemvalue="Python.config" />
+      <item itemvalue="Python.common" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run (3)" />
+        <item itemvalue="Python.common" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.crawl_lianjia" />
         <item itemvalue="Python.config" />
-        <item itemvalue="Python.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +395,7 @@
       <workItem from="1559401635593" duration="2441000" />
       <workItem from="1559447971216" duration="1285000" />
       <workItem from="1559451398370" duration="1198000" />
-      <workItem from="1559462028001" duration="5123000" />
+      <workItem from="1559462028001" duration="6651000" />
     </task>
     <task id="LOCAL-00001" summary="update lianjia spider">
       <created>1556609653127</created>
@@ -468,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375917000" />
+    <option name="totallyTimeSpent" value="377445000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,14 +470,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49621785" weight="0.4295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49621785" visible="true" weight="0.45081967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3967213" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
@@ -523,26 +511,27 @@
     <SUITE FILE_PATH="coverage/GraduationProject$pie.coverage" NAME="pie Coverage Results" MODIFIED="1556551496309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
     <SUITE FILE_PATH="coverage/GraduationProject$list.coverage" NAME="list Coverage Results" MODIFIED="1556853049292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianjia" />
     <SUITE FILE_PATH="coverage/GraduationProject$run__2_.coverage" NAME="run (2) Coverage Results" MODIFIED="1557920786760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/lianjia_rent/lianjia_rent" />
-    <SUITE FILE_PATH="coverage/Lianjia$app.coverage" NAME="app Coverage Results" MODIFIED="1559465800492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianjia" />
     <SUITE FILE_PATH="coverage/GraduationProject$mongo.coverage" NAME="mongo Coverage Results" MODIFIED="1556606746138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
-    <SUITE FILE_PATH="coverage/GraduationProject$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1558004317966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
     <SUITE FILE_PATH="coverage/GraduationProject$data_analysis.coverage" NAME="data_analysis Coverage Results" MODIFIED="1557553839177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
-    <SUITE FILE_PATH="coverage/GraduationProject$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1557920784734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse" />
-    <SUITE FILE_PATH="coverage/Lianjia$run__3_.coverage" NAME="run (3) Coverage Results" MODIFIED="1559466018354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GraduationProject$common.coverage" NAME="common Coverage Results" MODIFIED="1557544694458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
     <SUITE FILE_PATH="coverage/GraduationProject$app.coverage" NAME="app Coverage Results" MODIFIED="1558922343071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianjia" />
-    <SUITE FILE_PATH="coverage/GraduationProject$run__3_.coverage" NAME="run (3) Coverage Results" MODIFIED="1558922172749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GraduationProject$rent.coverage" NAME="rent Coverage Results" MODIFIED="1557616468531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
     <SUITE FILE_PATH="coverage/GraduationProject$run.coverage" NAME="run Coverage Results" MODIFIED="1557922499739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang" />
     <SUITE FILE_PATH="coverage/GraduationProject$crawl_lianjia.coverage" NAME="crawl_lianjia Coverage Results" MODIFIED="1557591702402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
+    <SUITE FILE_PATH="coverage/GraduationProject$ershoufang.coverage" NAME="ershoufang Coverage Results" MODIFIED="1557641094680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
+    <SUITE FILE_PATH="coverage/GraduationProject$test.coverage" NAME="test Coverage Results" MODIFIED="1557657312828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
+    <SUITE FILE_PATH="coverage/GraduationProject$mongo__1_.coverage" NAME="mongo (1) Coverage Results" MODIFIED="1556607576934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
+    <SUITE FILE_PATH="coverage/Lianjia$app.coverage" NAME="app Coverage Results" MODIFIED="1559465800492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianjia" />
+    <SUITE FILE_PATH="coverage/GraduationProject$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1558004317966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
+    <SUITE FILE_PATH="coverage/GraduationProject$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1557920784734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse" />
+    <SUITE FILE_PATH="coverage/Lianjia$run__3_.coverage" NAME="run (3) Coverage Results" MODIFIED="1559469316115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lianjia$common.coverage" NAME="common Coverage Results" MODIFIED="1559468246718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
+    <SUITE FILE_PATH="coverage/GraduationProject$common.coverage" NAME="common Coverage Results" MODIFIED="1557544694458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
+    <SUITE FILE_PATH="coverage/GraduationProject$run__3_.coverage" NAME="run (3) Coverage Results" MODIFIED="1558922172749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GraduationProject$newhouse.coverage" NAME="newhouse Coverage Results" MODIFIED="1557616464454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
     <SUITE FILE_PATH="coverage/GraduationProject$lang.coverage" NAME="lang Coverage Results" MODIFIED="1557325445602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianjia" />
     <SUITE FILE_PATH="coverage/Lianjia$crawl_lianjia.coverage" NAME="crawl_lianjia Coverage Results" MODIFIED="1559464998125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/GraduationProject$constants.coverage" NAME="constants Coverage Results" MODIFIED="1557544619996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianjia" />
-    <SUITE FILE_PATH="coverage/GraduationProject$ershoufang.coverage" NAME="ershoufang Coverage Results" MODIFIED="1557641094680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
-    <SUITE FILE_PATH="coverage/GraduationProject$test.coverage" NAME="test Coverage Results" MODIFIED="1557657312828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/GraduationProject$common__1_.coverage" NAME="common (1) Coverage Results" MODIFIED="1556618531588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse" />
-    <SUITE FILE_PATH="coverage/GraduationProject$mongo__1_.coverage" NAME="mongo (1) Coverage Results" MODIFIED="1556607576934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_visualize" />
     <SUITE FILE_PATH="coverage/Lianjia$config.coverage" NAME="config Coverage Results" MODIFIED="1559464680828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -787,15 +776,6 @@
         <state relative-caret-position="-2303" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_visualize/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3967">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python3.6.7/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -843,16 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_visualize/data_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/pipelines.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -896,16 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -916,20 +876,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_visualize/newhouse.py">
+    <entry file="file://$PROJECT_DIR$/data_visualize/data_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="338">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_visualize/ershoufang.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="-315">
+          <caret line="393" column="28" lean-forward="true" selection-start-line="393" selection-start-column="28" selection-end-line="393" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_visualize/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_visualize/newhouse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="394" column="34" selection-start-line="394" selection-start-column="34" selection-end-line="394" selection-end-column="34" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -939,9 +919,19 @@
     <entry file="file://$PROJECT_DIR$/data_visualize/rent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <caret line="259" column="1" selection-start-line="259" selection-start-column="1" selection-end-line="259" selection-end-column="1" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>

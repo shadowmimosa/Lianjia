@@ -29,7 +29,7 @@ class rent():
 
     #  每个品牌房源占比
     def source_percentage(self, collections):
-        save_dir = self.path + "\\source_percentage"
+        save_dir = self.path + sep + "source_percentage"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -59,12 +59,12 @@ class rent():
                     value = [i['brand_count'] for i in result]
             rose = self.charts.pie_rosetype(key, value, '{}市链家租房来源'.format(city))
             make_snapshot(snapshot, rose.render(),
-                          "{}\\{}.gif".format(save_dir, '{}市链家租房来源'.format(city)))
+                          img_name.format(save_dir, '{}市链家租房来源'.format(city)))
             print("完成{}市租房来源作图".format(city))
 
     # 房源占比最高的top5均价
     def brandtop5_avg_price(self, collections):
-        save_dir = self.path + "\\brand_avg_price"
+        save_dir = self.path + sep + "brand_avg_price"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -88,12 +88,12 @@ class rent():
                     value.append(int(i['avg_price']))
             funnel = self.charts.funnel_label_inside(key, value, '{}市房源占比最高平台top5均价'.format(city))
             make_snapshot(snapshot, funnel.render(),
-                          "{}\\{}.gif".format(save_dir, '{}市房源占比最高平台top5均价'.format(city)))
+                          img_name.format(save_dir, '{}市房源占比最高平台top5均价'.format(city)))
             print("完成{}市房源占比最高平台top5均价作图".format(city))
 
     # 每平米均价
     def avg_price_rent(self, collections):
-        save_dir = self.path + "\\avg_price"
+        save_dir = self.path + sep + "avg_price"
         first_key = []
         new_first_key = []
         second_key = []
@@ -151,51 +151,51 @@ class rent():
                     fifth_value.append(int(average_price[0]['avg_price']))
             self.avg_price.append(dict)
         first_bar = self.charts.bar(first_key, first_value, "", '一线城市租房均价', self.yuan_per_square)
-        make_snapshot(snapshot, first_bar.render(), "{}\\{}.gif".format(save_dir, '一线城市租房均价', ))
+        make_snapshot(snapshot, first_bar.render(), img_name.format(save_dir, '一线城市租房均价', ))
         new_first_bar = self.charts.bar(new_first_key[:10], new_first_value[:10], "",
                                         '新一线城市租房均价(1)', self.yuan_per_square)
-        make_snapshot(snapshot, new_first_bar.render(), "{}\\{}.gif".format(save_dir, '新一线城市租房均价(1)', ))
+        make_snapshot(snapshot, new_first_bar.render(), img_name.format(save_dir, '新一线城市租房均价(1)', ))
         new_first_bar2 = self.charts.bar(new_first_key[10:], new_first_value[10:], "",
                                          '新一线城市二手房租房均价(2)', self.yuan_per_square)
-        make_snapshot(snapshot, new_first_bar2.render(), "{}\\{}.gif".format(save_dir, '新一线城市租房均价(2)', ))
+        make_snapshot(snapshot, new_first_bar2.render(), img_name.format(save_dir, '新一线城市租房均价(2)', ))
         second_bar = self.charts.bar(second_key[:10], second_value[:10], "",
                                      '二线城市租房均价(1)', self.yuan_per_square)
-        make_snapshot(snapshot, second_bar.render(), "{}\\{}.gif".format(save_dir,
-                                                                         '二线城市租房均价(1)'))
+        make_snapshot(snapshot, second_bar.render(), img_name.format(save_dir,
+                                                                     '二线城市租房均价(1)'))
         second_bar2 = self.charts.bar(second_key[10:20], second_value[10:20], "",
                                       '二线城市租房均价(2)', self.yuan_per_square)
-        make_snapshot(snapshot, second_bar2.render(), "{}\\{}.gif".format(save_dir,
-                                                                          '二线城市租房均价(2)'))
+        make_snapshot(snapshot, second_bar2.render(), img_name.format(save_dir,
+                                                                      '二线城市租房均价(2)'))
         second_bar3 = self.charts.bar(second_key[20:], second_value[20:], "",
                                       '二线城市租房均价(3)', self.yuan_per_square)
-        make_snapshot(snapshot, second_bar3.render(), "{}\\{}.gif".format(save_dir,
-                                                                          '二线城市租房均价(3)'))
+        make_snapshot(snapshot, second_bar3.render(), img_name.format(save_dir,
+                                                                      '二线城市租房均价(3)'))
         third_bar = self.charts.bar(third_key[:10], third_value[:10], "",
                                     '三线城市租房均价(1)', self.yuan_per_square)
-        make_snapshot(snapshot, third_bar.render(), "{}\\{}.gif".format(save_dir, '三线城市租房均价(1)'))
+        make_snapshot(snapshot, third_bar.render(), img_name.format(save_dir, '三线城市租房均价(1)'))
         third_bar2 = self.charts.bar(third_key[10:20], third_value[10:20], "",
                                      '三线城市租房均价(2)', self.yuan_per_square)
-        make_snapshot(snapshot, third_bar2.render(), "{}\\{}.gif".format(save_dir, '三线城市租房均价(2)'))
+        make_snapshot(snapshot, third_bar2.render(), img_name.format(save_dir, '三线城市租房均价(2)'))
         third_bar3 = self.charts.bar(third_key[20:], third_value[20:], "",
                                      '三线城市租房均价(3)', self.yuan_per_square)
-        make_snapshot(snapshot, third_bar3.render(), "{}\\{}.gif".format(save_dir, '三线城市租房均价(3)'))
+        make_snapshot(snapshot, third_bar3.render(), img_name.format(save_dir, '三线城市租房均价(3)'))
         forth_bar = self.charts.bar(forth_key[:10], forth_value[:10], "",
                                     '四线城市租房均价(1)', self.yuan_per_square)
-        make_snapshot(snapshot, forth_bar.render(), "{}\\{}.gif".format(save_dir, '四线城市租房均价(1)'))
+        make_snapshot(snapshot, forth_bar.render(), img_name.format(save_dir, '四线城市租房均价(1)'))
         forth_bar2 = self.charts.bar(forth_key[10:20], forth_value[10:20], "",
                                      '四线城市租房均价(2)', self.yuan_per_square)
-        make_snapshot(snapshot, forth_bar2.render(), "{}\\{}.gif".format(save_dir, '四线城市租房均价(2)'))
+        make_snapshot(snapshot, forth_bar2.render(), img_name.format(save_dir, '四线城市租房均价(2)'))
         forth_bar3 = self.charts.bar(forth_key[20:], forth_value[20:], "",
                                      '四线城市租房均价(3)', self.yuan_per_square)
-        make_snapshot(snapshot, forth_bar3.render(), "{}\\{}.gif".format(save_dir, '四线城市租房均价(3)'))
+        make_snapshot(snapshot, forth_bar3.render(), img_name.format(save_dir, '四线城市租房均价(3)'))
         fifth_bar = self.charts.bar(fifth_key, fifth_value, "",
                                     '五线城市租房均价', self.yuan_per_square)
-        make_snapshot(snapshot, fifth_bar.render(), "{}\\{}.gif".format(save_dir, '五线城市租房均价'))
+        make_snapshot(snapshot, fifth_bar.render(), img_name.format(save_dir, '五线城市租房均价'))
         print("完成二手房租房均价作图")
 
     # 租房最贵top5
     def rent_max_top5(self, collections):
-        save_dir = self.path + "\\rent_max_top5"
+        save_dir = self.path + sep + "rent_max_top5"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -214,12 +214,12 @@ class rent():
             min_top5_scatter = self.charts.scatter_visualmap_color(key, value, city,
                                                                    '{}市租房价格最高top5'.format(city))
             make_snapshot(snapshot, min_top5_scatter.render(),
-                          "{}\\{}.gif".format(save_dir, '{}市租房价格最高top5'.format(city)))
+                          img_name.format(save_dir, '{}市租房价格最高top5'.format(city)))
             print('完成 {} 市租房价格最高top5作图'.format(city))
 
     # 租房最低top5
     def rent_min_top5(self, collections):
-        save_dir = self.path + "\\rent_min_top5"
+        save_dir = self.path + sep + "rent_min_top5"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -237,14 +237,14 @@ class rent():
                 value = [i['price'] for i in min_top5]
             min_top5_scatter = self.charts.scatter_spliteline(key, value, city,
                                                               '{}市租房价格最低top5'.format(city))
-            print("{}\\{}.gif".format(save_dir, '{}市租房价格最低top5'.format(city)))
+            print(img_name.format(save_dir, '{}市租房价格最低top5'.format(city)))
             make_snapshot(snapshot, min_top5_scatter.render(),
-                          "{}\\{}.gif".format(save_dir, '{}市租房价格最低top5'.format(city)))
+                          img_name.format(save_dir, '{}市租房价格最低top5'.format(city)))
             print('完成 {} 市租房价格最低top5作图'.format(city))
 
     # 租房标签词云
     def tag_wordcloud(self, collections):
-        save_dir = self.path + "\\tag_wordcloud"
+        save_dir = self.path + sep + "tag_wordcloud"
         if not os.path.exists(save_dir):
             os.mkdir(save_dir)
         for city in collections:
@@ -266,7 +266,7 @@ class rent():
                 wordcloud.append((key, value))
             tag = self.charts.wordcloud_diamond(wordcloud, title='{}市租房热门标签'.format(city))
             make_snapshot(snapshot, tag.render(),
-                          "{}\\{}.gif".format(save_dir, '{}市租房热门标签'.format(city)))
+                          img_name.format(save_dir, '{}市租房热门标签'.format(city)))
             print("完成{}市租房热门标签".format(city))
 
 
