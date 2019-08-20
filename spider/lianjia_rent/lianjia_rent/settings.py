@@ -69,7 +69,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'lianjia_rent.pipelines.RentEsPipeline': 300,
+#    'lianjia_rent.pipelines.RentEsPipeline': 300,
     'lianjia_rent.pipelines.RentMongoPipeline': 300,
 }
 
