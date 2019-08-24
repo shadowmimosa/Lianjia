@@ -1,7 +1,29 @@
 import pymysql.cursors
 
+ershoufang_sql = """
+CREATE TABLE `ershoufang` (
+`id` INT ( 11 ) NOT NULL AUTO_INCREMENT,
+`city` VARCHAR ( 255 ) COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '城市',
+`house_url` LONGTEXT COLLATE utf8_bin NOT NULL  COMMENT '房产url',
+`img_url` LONGTEXT COLLATE utf8_bin NOT NULL COMMENT '图片链接',
+`title` VARCHAR ( 255 ) COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '标题',
+`xiaoqu_url` text ( 255 ) COLLATE utf8_bin NOT NULL COMMENT '小区url',
+`xiaoqu_name` VARCHAR ( 255 ) COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '小区名',
+`huxing` VARCHAR ( 255 ) COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '户型',
+`position_info` VARCHAR ( 255 ) COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '位置信息',
+`position` VARCHAR ( 255 ) COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '位置',
+`position_url` VARCHAR ( 255 ) COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '位置url',
+`total_price` INT ( 11 ) COLLATE utf8_bin NOT NULL DEFAULT 0 COMMENT '总价',
+`square_price` INT ( 11 ) COLLATE utf8_bin NOT NULL DEFAULT 0 COMMENT '每平米价格',
+`crawl_time` BIGINT COLLATE utf8_bin NOT NULL DEFAULT 0,
+PRIMARY KEY ( `id` ) 
+) ENGINE = INNODB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8 COLLATE = utf8_bin;
+"""
+
+
+
 # Connect to the database
-connection = pymysql.connect(host='localhost',
+connection = pymysql.connect(host='39.106.114.90',
                              user='root',
                              password='root',
                              db='lianjia',

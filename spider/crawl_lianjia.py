@@ -8,7 +8,7 @@ import elasticsearch
 # 更新数据前先删除当天已经存在的数据库
 def drop_database():
     client = pymongo.MongoClient()
-    es = elasticsearch.Elasticsearch()
+    # es = elasticsearch.Elasticsearch()
     if client[newhousedb()]:
         client.drop_database(newhousedb())
     if client[ershoufangdb()]:
@@ -16,12 +16,12 @@ def drop_database():
     if client[rentdb()]:
         client.drop_database(rentdb())
 
-    if es.indices.exists(ershoufangdb()):
-        es.indices.delete(ershoufangdb())
-    if es.indices.exists(newhousedb()):
-        es.indices.delete(newhousedb())
-    if es.indices.exists(rentdb()):
-        es.indices.delete(rentdb())
+    # if es.indices.exists(ershoufangdb()):
+    #     es.indices.delete(ershoufangdb())
+    # if es.indices.exists(newhousedb()):
+    #     es.indices.delete(newhousedb())
+    # if es.indices.exists(rentdb()):
+    #     es.indices.delete(rentdb())
 
 
 def crawl_ershoufang():

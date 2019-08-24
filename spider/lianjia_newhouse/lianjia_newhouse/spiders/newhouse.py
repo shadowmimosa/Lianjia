@@ -19,6 +19,7 @@ class NewhouseSpider(scrapy.Spider):
     def __int__(self):
         self.start_urls = get_all_city()
         self.city_map = all_city_map()
+        print(self.city_map)
 
     def start_requests(self):
         for city, url in all_city_map().items():
