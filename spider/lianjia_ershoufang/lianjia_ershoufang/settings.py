@@ -67,7 +67,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # 'lianjia_ershoufang.pipelines.ErshoufangEsPipeline': 300,
+    'lianjia_ershoufang.pipelines.ErshoufangEsPipeline': 300,
     'lianjia_ershoufang.pipelines.ErshoufangMongoPipeline': 300,
 }
 
