@@ -39,19 +39,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="286">
+              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://D:/python3.6.7/Lib/site-packages/pymysql/connections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1560">
+            <state relative-caret-position="-14430">
               <caret line="521" column="14" lean-forward="true" selection-start-line="521" selection-start-column="14" selection-end-line="521" selection-end-column="14" />
             </state>
           </provider>
@@ -413,7 +413,7 @@
       <workItem from="1559740417156" duration="613000" />
       <workItem from="1563588577380" duration="636000" />
       <workItem from="1563637414571" duration="493000" />
-      <workItem from="1566635702297" duration="1550000" />
+      <workItem from="1566635702297" duration="1895000" />
     </task>
     <task id="LOCAL-00001" summary="update lianjia spider">
       <created>1556609653127</created>
@@ -475,7 +475,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384682000" />
+    <option name="totallyTimeSpent" value="385027000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,7 +488,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25113463" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -505,7 +504,7 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.6262295" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.40327868" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.40327868" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.328594" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="0" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -936,17 +935,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://D:/python3.6.7/Lib/site-packages/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="-14430">
+          <caret line="521" column="14" lean-forward="true" selection-start-line="521" selection-start-column="14" selection-end-line="521" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python3.6.7/Lib/site-packages/pymysql/connections.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1560">
-          <caret line="521" column="14" lean-forward="true" selection-start-line="521" selection-start-column="14" selection-end-line="521" selection-end-column="14" />
+        <state relative-caret-position="286">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
