@@ -67,7 +67,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'lianjia_newhouse.pipelines.NewhouseEsPipeline': 300,
+    # 'lianjia_newhouse.pipelines.NewhouseEsPipeline': 300,
     'lianjia_newhouse.pipelines.NewhouseMongoPipeline': 300,
 }
 
