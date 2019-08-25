@@ -17,10 +17,11 @@ class ErshoufangSpider(scrapy.Spider):
     def __int__(self):
         self.start_urls = get_all_city()
         self.city_map = all_city_map()
-        print(self.city_map)
+        print({'data':self.city_map})
+        exit(0)
 
     def start_requests(self):
-        for city, url in all_city_map().items():
+        for city, url in self.city_map.items():
             self.city = city
             for i in range(1, 101):
                 crawl_url = '{}/ershoufang/pg{}/'.format(url, str(i))
@@ -28,9 +29,9 @@ class ErshoufangSpider(scrapy.Spider):
 
     def parse(self, response):
         url = re.findall(re.compile('<a class="noresultRecommend img " href="(.+?)"'),
-                         response.text)
+                         response.text)[:255]
         img_title = re.findall(re.compile('data-original="(.+?)" alt="(.+?)"></a><div class="info clear">?'),
-                               response.text)
+                               response.text)[:250]
         xiaoqu = self.get_xiaoqu(re.findall(re.compile('<div class="address">(.+?)</div>'),
                                             response.text))
         position_info = self.get_position_info(
