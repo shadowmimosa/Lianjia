@@ -21,6 +21,7 @@ class ErshoufangSpider(scrapy.Spider):
         exit(0)
 
     def start_requests(self):
+        print(self.city_map)
         for city, url in self.city_map.items():
             self.city = city
             for i in range(1, 101):

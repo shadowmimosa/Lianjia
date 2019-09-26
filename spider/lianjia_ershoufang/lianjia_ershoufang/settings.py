@@ -14,7 +14,8 @@ BOT_NAME = 'lianjia_ershoufang'
 
 SPIDER_MODULES = ['lianjia_ershoufang.spiders']
 NEWSPIDER_MODULE = 'lianjia_ershoufang.spiders'
-MONGO_URI = 'localhost'
+MONGO_URI = '39.106.114.90'
+MYSQL_URI = 'localhost'
 ERSHOUFANG = ershoufangdb()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

@@ -57,14 +57,14 @@ def crawl_lianjia():
     drop_database()
     spider_status = '正在爬取二手房数据'
     crawl_ershoufang()
-    spider_status = '正在爬取新房数据'
-    print(os.getcwd())
-    crawl_newhouse()
-    spider_status = '正在爬取租房数据'
-    print(os.getcwd())
-    crawl_rent()
-    data_update_time = int(time.time())
-    os.chdir(os.pardir)
+    # spider_status = '正在爬取新房数据'
+    # print(os.getcwd())
+    # crawl_newhouse()
+    # spider_status = '正在爬取租房数据'
+    # print(os.getcwd())
+    # crawl_rent()
+    # data_update_time = int(time.time())
+    # os.chdir(os.pardir)
 
 
 if __name__ == '__main__':

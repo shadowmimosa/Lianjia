@@ -14,7 +14,7 @@ BOT_NAME = 'lianjia_newhouse'
 
 SPIDER_MODULES = ['lianjia_newhouse.spiders']
 NEWSPIDER_MODULE = 'lianjia_newhouse.spiders'
-MONGO_URI = 'localhost'
+MONGO_URI = '39.106.114.90'
 NEWHOUSE = newhousedb()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

@@ -15,7 +15,7 @@ BOT_NAME = 'lianjia_rent'
 
 SPIDER_MODULES = ['lianjia_rent.spiders']
 NEWSPIDER_MODULE = 'lianjia_rent.spiders'
-MONGO_URI = 'localhost'
+MONGO_URI = '39.106.114.90'
 RENT = rentdb()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
