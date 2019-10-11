@@ -69,9 +69,11 @@
 ![](lianjia/static/newhouse/tag_wordcloud/上海市新房热门标签.gif)
 ![](lianjia/static/newhouse/wuye_type_count/南京市新房物业类型占比分布图.gif)
 * 租房
-![](lianjia/static/rent/avg_price/一线城市租房均价.gif)
-![](lianjia/static/rent/brand_avg_price/东莞市房源占比最高平台top5均价.gif)
-![](lianjia/static/rent/rent_max_top5/合肥市租房价格最高top5.gif)
-![](lianjia/static/rent/rent_min_top5/杭州市租房价格最低top5.gif)
-![](lianjia/static/rent/source_percentage/广州市链家租房来源.gif)
-![](lianjia/static/rent/tag_wordcloud/杭州市租房热门标签.gif)
+  ![](lianjia/static/rent/avg_price/一线城市租房均价.gif)
+  ![](lianjia/static/rent/brand_avg_price/东莞市房源占比最高平台top5均价.gif)
+  ![](lianjia/static/rent/rent_max_top5/合肥市租房价格最高top5.gif)
+  ![](lianjia/static/rent/rent_min_top5/杭州市租房价格最低top5.gif)
+  ![](lianjia/static/rent/source_percentage/广州市链家租房来源.gif)
+  ![](lianjia/static/rent/tag_wordcloud/杭州市租房热门标签.gif)
+
+  ##### 本源码只作技术交流使用，请勿用以违法用途，由本源码直接或间接产生的法律问题，将由使用者自行承担

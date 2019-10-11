@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16fb5336-c362-4f0e-a693-c764951c928f" name="Default" comment="update readme">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/git.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/一线城市二手房每平米均价.gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/一线城市二手房每平米均价.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/三线城市二手房每平米均价(1).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/三线城市二手房每平米均价(1).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/三线城市二手房每平米均价(2).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/三线城市二手房每平米均价(2).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/三线城市二手房每平米均价(3).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/三线城市二手房每平米均价(3).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/二线城市二手房每平米均价(1).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/二线城市二手房每平米均价(1).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/二线城市二手房每平米均价(2).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/二线城市二手房每平米均价(2).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/二线城市二手房每平米均价(3).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/二线城市二手房每平米均价(3).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/四线城市二手房每平米均价(1).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/四线城市二手房每平米均价(1).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/新一线城市二手房每平米均价(1).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/新一线城市二手房每平米均价(1).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/新一线城市二手房每平米均价(2).gif" beforeDir="false" afterPath="$PROJECT_DIR$/lianjia/static/ershoufang/avg_square_meter/新一线城市二手房每平米均价(2).gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/crawl_lianjia.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/crawl_lianjia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/spiders/ershoufang.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_ershoufang/lianjia_ershoufang/spiders/ershoufang.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_newhouse/lianjia_newhouse/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/lianjia_rent/lianjia_rent/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lianjia_rent/lianjia_rent/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-    </list>
+    <list default="true" id="16fb5336-c362-4f0e-a693-c764951c928f" name="Default" comment="update readme" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="434" />
     <option name="y" value="3" />
     <option name="width" value="1346" />
@@ -293,7 +271,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UtilSql" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -550,6 +528,7 @@
       <workItem from="1568994392773" duration="818000" />
       <workItem from="1569081896461" duration="2355000" />
       <workItem from="1569128640252" duration="594000" />
+      <workItem from="1569502248342" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="update lianjia spider">
       <created>1556609653127</created>
@@ -611,7 +590,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="409597000" />
+    <option name="totallyTimeSpent" value="410210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,9 +603,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23524962" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
