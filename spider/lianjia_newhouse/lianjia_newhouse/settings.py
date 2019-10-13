@@ -9,12 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 import time
-from config import *
+from config.configs import *
+
+
 BOT_NAME = 'lianjia_newhouse'
 
 SPIDER_MODULES = ['lianjia_newhouse.spiders']
 NEWSPIDER_MODULE = 'lianjia_newhouse.spiders'
-MONGO_URI = '39.106.114.90'
+MONGO_URI = mongo_uri
 NEWHOUSE = newhousedb()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -67,7 +69,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # 'lianjia_newhouse.pipelines.NewhouseEsPipeline': 300,
+    'lianjia_newhouse.pipelines.NewhouseEsPipeline': 300,
     'lianjia_newhouse.pipelines.NewhouseMongoPipeline': 300,
 }
 

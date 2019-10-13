@@ -6,7 +6,7 @@ from data_visualize.common import *
 from pyecharts.render import make_snapshot
 # 使用 snapshot-selenium 渲染图片
 from snapshot_selenium import snapshot
-from config import *
+from config.configs import *
 
 
 # 新房数据分析

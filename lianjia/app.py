@@ -4,7 +4,7 @@ from flask_moment import Moment
 from lianjia.form import *
 from lianjia.list import *
 from lianjia.search import es_search
-
+from config.configs import *
 app = Flask(__name__)
 # csrf保护密匙
 app.config['SECRET_KEY'] = 'dfjhiFHBCUDHBVdbvbHXbfgnghklVJfuhkbfgv'

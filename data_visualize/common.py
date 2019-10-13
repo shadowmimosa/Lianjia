@@ -2,7 +2,7 @@ import time
 import pymongo
 import os
 from lianjia.constants import *
-from config import sep
+from config.configs import *
 
 base_path = web_static_base_path
 # 字符串模板

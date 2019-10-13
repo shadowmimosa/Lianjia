@@ -4,7 +4,7 @@ from data_visualize.echarts import charts
 from pyecharts.render import make_snapshot
 # 使用 snapshot-selenium 渲染图片
 from snapshot_selenium import snapshot
-from config import *
+from config.configs import *
 
 
 class rent():

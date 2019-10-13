@@ -1,13 +1,14 @@
 import pymongo
 import time
 import os
-from config import *
+from config.configs import *
+
 ershoufang_db = ''
 web_static_base_path = os.path.split(os.path.realpath(__file__))[0] + sep+ "static"
 
 
 def get_city_form(type):
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(host=mongo_uri)
     db = 'lianjia_{}'.format(type) + str(time.strftime('%Y%m%d', time.localtime(time.time())))
     db = client[db]
     collections = db.list_collection_names()
@@ -20,7 +21,7 @@ def get_city_form(type):
 
 
 def get_city_map(type):
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = 'lianjia_{}'.format(type) + str(time.strftime('%Y%m%d', time.localtime(time.time())))
     db = client[db]
     collections = db.list_collection_names()

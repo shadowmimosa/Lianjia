@@ -7,7 +7,7 @@ from pyecharts.render import make_snapshot
 # 使用 snapshot-selenium 渲染图片
 from snapshot_selenium import snapshot
 from data_visualize.lang import *
-from config import *
+from config.configs import *
 from .common import *
 
 

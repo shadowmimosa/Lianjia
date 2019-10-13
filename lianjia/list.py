@@ -1,7 +1,8 @@
 from lianjia.constants import *
 import os
 from data_visualize.common import base_path
-from config import *
+
+from config.configs import *
 
 
 class newhouse_list():

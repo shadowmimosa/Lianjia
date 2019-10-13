@@ -8,13 +8,14 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-import time
-from config import *
+from config.configs import *
+
+
 BOT_NAME = 'lianjia_ershoufang'
 
 SPIDER_MODULES = ['lianjia_ershoufang.spiders']
 NEWSPIDER_MODULE = 'lianjia_ershoufang.spiders'
-MONGO_URI = '39.106.114.90'
+MONGO_URI = mongo_uri
 MYSQL_URI = 'localhost'
 ERSHOUFANG = ershoufangdb()
 
@@ -68,7 +69,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # 'lianjia_ershoufang.pipelines.ErshoufangEsPipeline': 300,
+    'lianjia_ershoufang.pipelines.ErshoufangEsPipeline': 300,
     'lianjia_ershoufang.pipelines.ErshoufangMongoPipeline': 300,
 }
 

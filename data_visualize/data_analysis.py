@@ -2,7 +2,7 @@ from data_visualize.newhouse import newhouse
 from data_visualize.ershoufang import ershoufang
 from data_visualize.rent import rent
 import os
-from config import *
+from config.configs import *
 
 
 def data_analysis():

@@ -9,13 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 import time
-from config import *
+from config.configs import *
+
 
 BOT_NAME = 'lianjia_rent'
 
 SPIDER_MODULES = ['lianjia_rent.spiders']
 NEWSPIDER_MODULE = 'lianjia_rent.spiders'
-MONGO_URI = '39.106.114.90'
+MONGO_URI = mongo_uri
 RENT = rentdb()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -69,7 +70,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-#    'lianjia_rent.pipelines.RentEsPipeline': 300,
+    'lianjia_rent.pipelines.RentEsPipeline': 300,
     'lianjia_rent.pipelines.RentMongoPipeline': 300,
 }
 
